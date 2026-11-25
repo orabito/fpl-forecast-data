@@ -1,5 +1,7 @@
 name: Update referees
 on:
+  push:
+      branches: [main]
   schedule:
     # Thu-Mon, every 3 hours (UTC). GitHub may start runs a few minutes late.
     - cron: "15 */3 * * 0,1,4,5,6"
